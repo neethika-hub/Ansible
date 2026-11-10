@@ -1,6 +1,7 @@
 - name: Hello World
   hosts: node1
-  #connection: local #no need to provide username and password while running the playbook
+  #hosts: local
+  #connection: local #no need to provide username and password while running the playbook when hosts is localhost
   tasks:
   - name: Print Hello World
     ansible.builtin.debug:
