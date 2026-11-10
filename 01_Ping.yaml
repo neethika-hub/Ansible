@@ -1,5 +1,5 @@
 - name: Ping the server
   hosts: node1
   tasks:
-  - name: PING 
+  - name: Server ping
     ansible.buitlin.ping:
