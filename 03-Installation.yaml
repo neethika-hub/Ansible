@@ -1,0 +1,13 @@
+- name: Installation and Starting of NGINX
+  hosts: node1
+  become: yes #for running as ROOT user
+  tasks:
+  - name: Installation of NGINX
+    ansible.builtin.package:
+      name: nginx 
+      state: 
+  - name: Starting NGINX
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enabled: yes
