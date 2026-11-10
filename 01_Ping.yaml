@@ -2,4 +2,4 @@
   host: node1
   task:
   - name: PING 
-    ansible.buitlin.ping
+    ansible.buitlin.ping:
